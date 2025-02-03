@@ -11,17 +11,18 @@
  */
 
 // Write your solution here
-function sumArray(array){
-    if(!Array.isArray(array)){
-        throw new TypeError(" ارایه وارد کنید")
+function sumArray(array) {
+    if (!Array.isArray(array)) {
+        throw new TypeError("ارایه وارد کنید");
     }
     let sum = 0;
-    for(let i = 0 ; i < array.length ; i++){
-        sum+=array[i]
+    for (const num of array) {
+        sum += num;
     }
-    return sum
+    return sum;
 }
-console.log(sumArray([1, 2, 3])); 
+console.log(sumArray([1, 2, 3])); // 6
+ 
 
 
 
