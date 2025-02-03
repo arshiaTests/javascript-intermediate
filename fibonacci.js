@@ -11,14 +11,14 @@
  */
 
 // Write your solution here
-function fibonacci (n){
-    let fab = [0 , 1];
-    for(i=2;i<n;i++){
+const fibonacci = (n) => {
+    let fab = [0, 1];
+    for (let i = 2; i < n; i++) { 
         fab.push(fab[i - 1] + fab[i - 2]);
     }
-    return fab
-}
+    return fab; 
+};
 
-console.log(fibonacci(5));
+console.log(fibonacci(5)); 
 
- module.exports = fibonacci;
+module.exports = fibonacci;
