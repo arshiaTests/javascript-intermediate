@@ -11,19 +11,11 @@
  */
 
 // Write your solution here
-function charCount (name,x){
-    let sum = 0;
-    for(let i of name){
-        if(i === x) sum++;
-    }
-    return sum;
 
-}
-let charCounts = (name,x) => name.split("").filter(i => i === x).length;
-  // استفاده
-//   console.log(charCount("hello world", "o")); // 2
+let charCount = (name, x) => name.split("").filter(i => i === x).length;
+
 console.log(charCount("javascript", "a")); // 2
-console.log(charCounts("javascript", "a")); // 2
+console.log(charCount("javascript", "s")); // 1
   
 
 module.exports = charCount;
